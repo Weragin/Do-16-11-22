@@ -1,10 +1,10 @@
 from typing import List
 
 
-def merge(list1: List[int], list2: List[int] = []) -> List[int]:
+def merge(list1: List[float], list2: List[float] = []) -> List[float]:
     """Accepts two sorted
     """
-    result: List[int] = []
+    result: List[float] = []
     while len(list1) > 0 and len(list2) > 0:
         if list1[0] < list2[0]:
             result.append(list1.pop(0))
